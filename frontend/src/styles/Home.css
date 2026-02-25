@@ -1,0 +1,116 @@
+.home-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-topbar {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    z-index: 10;
+}
+
+.home-team {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-1);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--light-2);
+    padding: 8px 12px;
+    border-radius: 9999px;
+}
+
+.home-userbtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    border: 1px solid var(--light-2);
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home-userbtn i {
+    font-size: 22px;
+    color: var(--dark-1);
+}
+
+.home-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+}
+
+.home-title {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 4vw, 40px);
+    color: var(--dark-1);
+}
+
+.home-subtitle {
+    margin: 10px 0 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: clamp(14px, 2.2vw, 18px);
+    color: var(--dark-2);
+}
+
+.home-dropdown {
+    border-radius: 12px;
+    border: 1px solid var(--light-2);
+    padding: 0;
+    min-width: min(280px, calc(100vw - 32px));
+    max-width: calc(100vw - 32px);
+    transform: translate(0px, 46px);
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+}
+
+@media (max-width: 480px) {
+    .home-topbar {
+        top: 12px;
+        right: 12px;
+        left: 12px;
+    }
+}
+
+.home-userline {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.home-userline i {
+    font-size: 28px;
+    color: var(--dark-2);
+}
+
+.home-username {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--dark-1);
+}
+
+.home-userdetail {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-2);
+}

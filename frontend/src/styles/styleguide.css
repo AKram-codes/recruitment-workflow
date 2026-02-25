@@ -1,0 +1,59 @@
+/* -------------------------------
+   Fonts
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@400;600&display=swap');
+
+/* -------------------------------
+   Design Tokens
+-------------------------------- */
+:root {
+    /* Primary */
+    --primary: #3377FF;
+    --primary-dark: #2659BF;
+    --primary-light: #99BBFF;
+    --primary-subtle: #E3EDFF;
+
+    /* Dark */
+    --dark-1: #3A3A3C;
+    --dark-2: #6B7588;
+    --dark-3: #8F90A6;
+    --dark-4: #C7C9D9;
+
+    /* Light */
+    --light-1: #DDE5E9;
+    --light-2: #EBEBF0;
+    --light-3: #F2F2F5;
+    --light-4: #FAFAFC;
+
+    --error: #FF3B3B;
+    --success: #06C270;
+    --warning: #FFCC00;
+    --info: #0066F7;
+    --muted: #6B7588;
+    --light: #DDE5E9;
+    --dark: #3A3A3C;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* -------------------------------
+   Base
+-------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background: var(--light-1);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
